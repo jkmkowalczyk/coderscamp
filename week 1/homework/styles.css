@@ -1,0 +1,139 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+  }
+  
+  h1 {
+    font-size: 56px;
+    font-weight: 900;
+    margin: 0;
+    position: relative;
+  }
+  
+  p {
+    font-size: 24px;
+    margin: 0 0 24px 0;
+    opacity: 0.75;
+  }
+  
+  a {
+    color: #fff;
+    outline: 0;
+    text-decoration: none;
+  }
+  
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #348cb2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .bg {
+    background: url("img/bg.jpg");
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-position: center 85%;
+    
+  }
+  
+  .middle-box {
+    animation: show 1s 1s forwards;
+    opacity: 0;
+    text-align: center;
+    margin-top: -300px;
+    border: #fff 3px solid;
+    border-radius: 5px;
+  }
+
+  .container {
+    height: 400px;
+    width: 600px;
+    float: left;
+  }
+
+  .container-right-bg {
+    background-color: #ffffff;
+    height: 100%;
+    position: absolute;
+    width: 400px;
+    opacity: 0.8;
+  }
+
+  .container-left-bg {
+    background-color: #ffffff;
+    height: 100%;
+    position: absolute;
+    width: 600px;
+    opacity: 0.5;
+  }
+
+  .container-right {
+    height: 400px;
+    width: 400px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #image {
+    position: relative;
+    width: 300px;
+    opacity: 1;
+    border-radius: 5px;
+    border: 2px solid #cdb38b;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: -100px;
+  }
+  
+  .nav-item {
+    animation: show 0.5s ease-in-out forwards;
+    transition: all 0.3s ease-in-out;
+    border-radius: 100%;
+    border: solid 1px #fff;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+      }
+  
+  .nav-item:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.175);
+  }
+  
+  .nav-item a {
+    font-size: 28px;
+  }
+  
+  @keyframes show {
+    0% {
+      transform: translate(0, 16px);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0);
+      opacity: 1;
+    }
+  }
+  
+  

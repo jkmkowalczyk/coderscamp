@@ -7,102 +7,107 @@ body {
     font-size: 16px;
     font-weight: 300;
     line-height: 1.75;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-size: 56px;
     font-weight: 900;
     margin: 0;
     position: relative;
-  }
-  
-  p {
+}
+
+p {
     font-size: 24px;
     margin: 0 0 24px 0;
     opacity: 0.75;
-  }
-  
-  a {
+}
+
+a {
     color: #fff;
     outline: 0;
     text-decoration: none;
-  }
-  
-  .wrapper {
+}
+
+.wrapper {
     width: 100vw;
     height: 100vh;
-    background-color: #348cb2;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-  }
-  
-  .bg {
-    background: url("img/bg.jpg");
+}
+
+.bg {
     height: 100%;
     position: absolute;
     width: 100%;
-    background-position: center 85%;
-    
-  }
-  
-  .middle-box {
+    background: url("img/bg.jpg") center 85%;
+
+}
+
+.middle-box {
+    margin-top: -100px;
     animation: show 1s 1s forwards;
     opacity: 0;
     text-align: center;
-    margin-top: -300px;
     border: #fff 3px solid;
     border-radius: 5px;
-  }
+}
 
-  .container {
+.container {
     height: 400px;
     width: 600px;
     float: left;
-  }
+}
 
-  .container-right-bg {
-    background-color: #ffffff;
-    height: 100%;
-    position: absolute;
-    width: 400px;
-    opacity: 0.8;
-  }
+.container-left * {
+    position: relative;
+}
 
-  .container-left-bg {
+.container-left-bg {
     background-color: #ffffff;
     height: 100%;
     position: absolute;
     width: 600px;
     opacity: 0.5;
-  }
+}
 
-  .container-right {
+
+.container-right {
     height: 400px;
     width: 400px;
     float: left;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  #image {
+
+.container-right-bg {
+    background-color: #ffffff;
+    height: 100%;
+    position: absolute;
+    width: 400px;
+    opacity: 0.8;
+}
+
+
+
+#image {
     position: relative;
     width: 300px;
     opacity: 1;
     border-radius: 5px;
     border: 2px solid #cdb38b;
-  }
+}
 
-  .nav {
+.nav {
     display: flex;
     justify-content: center;
     position: relative;
     bottom: -100px;
-  }
-  
-  .nav-item {
+}
+
+.nav-item {
     animation: show 0.5s ease-in-out forwards;
     transition: all 0.3s ease-in-out;
     border-radius: 100%;
@@ -114,26 +119,26 @@ body {
     align-items: center;
     justify-content: center;
     bottom: 0;
-      }
-  
-  .nav-item:hover {
+}
+
+.nav-item:hover {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.175);
-  }
-  
-  .nav-item a {
+}
+
+.nav-item a {
     font-size: 28px;
-  }
-  
-  @keyframes show {
+}
+
+@keyframes show {
     0% {
-      transform: translate(0, 16px);
-      opacity: 0;
+        transform: translate(0, 16px);
+        opacity: 0;
     }
     100% {
-      transform: translate(0);
-      opacity: 1;
+        transform: translate(0);
+        opacity: 1;
     }
-  }
+}
   
   
